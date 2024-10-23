@@ -9,6 +9,7 @@ if __name__== '__main__':
     config = dotenv.dotenv_values(".env")
     t=soap.GenericWSDL(config["countryinfo"])
     # t.getWSDL()
+    t.getServices()
     # print( t.chiama_servizio('CapitalCity','IT') )
     # print( t.chiama_servizio('CountriesUsingCurrency','EUR') )
     # print( t.chiama_servizio('CountryCurrency','IT') )
