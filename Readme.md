@@ -14,21 +14,15 @@ in particolre riporto [comando-mzeep]
     URL WSDL: <https://www.dataaccess.com/webservicesserver/NumberConversion.wso?WSDL>
 
     Descrizione: Questo servizio fornisce conversioni di numeri (ad esempio, converte un numero in parole in inglese). È un servizio semplice ma utile per chi vuole sperimentare con le richieste SOAP.
-    
+
     Esempi:
-    
+
     - NumberToWords: Converte un numero in parole.
     - NumberToDollars: Converte un numero in un formato monetario in dollari.
 
-2. Global Weather by WebServiceX
+2. TempConvert
 
-    URL WSDL: <http://www.webservicex.net/globalweather.asmx?WSDL>
-
-    Descrizione: Questo servizio SOAP gratuito fornisce dati meteorologici in tutto il mondo. È utile per ottenere informazioni sul meteo attuale per una determinata città o paese.
-
-    Esempi:
-    - GetWeather: Restituisce le informazioni meteo per una specifica città.
-    - GetCitiesByCountry: Restituisce l'elenco delle città per un determinato paese.
+    URL WSDL: <https://www.w3schools.com/xml/tempconvert.asmx?wsdl>
 
 3. Country Info by WebServiceX
 
@@ -53,59 +47,15 @@ in particolre riporto [comando-mzeep]
     - Multiply: Moltiplica due numeri.
     - Divide: Divide due numeri.
 
-5. Bank BLZ Service
+5. Book ISBN Numbers
 
-    URL WSDL: <http://www.thomas-bayer.com/axis2/services/BLZService?wsdl>
+    URL WSDL: <https://webservices.daehosting.com/services/isbnservice.wso?wsdl>
 
-    Descrizione: Fornisce informazioni su banche tedesche a partire dal codice BLZ (Bankleitzahl). È particolarmente utile per test relativi ai servizi bancari o per ottenere informazioni sulle banche.
-
-    Esempi:
-    - getBank: Restituisce le informazioni di una banca partendo dal codice BLZ.
-
-6. Currency Converter by WebServiceX
-
-    URL WSDL: <http://www.webservicex.net/CurrencyConvertor.asmx?WSDL>
-
-    Descrizione: Un servizio che permette di convertire valute da una valuta all'altra utilizzando tassi di cambio attuali. Questo servizio può essere usato per applicazioni finanziarie o semplicemente per testare conversioni di valuta.
+    Descrizione: SOAP APIs for book ISBN numbers.
+    The test is done by calculation on the first 12 digits and compare the result with the checksum number at the end. You have to pass a 13 digits number.
 
     Esempi:
-    - ConversionRate: Restituisce il tasso di cambio corrente tra due valute specificate.
-
-7. United States ZIP Code Information
-
-    URL WSDL: <http://www.webservicex.net/uszip.asmx?WSDL>
-
-    Descrizione: Fornisce informazioni relative ai codici postali (ZIP) degli Stati Uniti, compresi dettagli come la città e lo stato corrispondente.
-
-    Esempi:
-    - GetInfoByZIP: Restituisce informazioni relative a un determinato codice ZIP.
-
-8. Email Validation SOAP API
-
-    URL WSDL: <https://www.brettle.com/webservices/emailverification.asmx?WSDL>
-
-    Descrizione: Questo servizio permette di validare indirizzi email. Può essere utile per integrazioni in applicazioni dove è necessario verificare la validità degli indirizzi email degli utenti.
-
-    Esempi:
-    - IsValidEmail: Verifica se un indirizzo email è valido.
-
-9. IP Location SOAP Service
-
-    URL WSDL: <http://www.webservicex.net/geoipservice.asmx?WSDL>
-
-    Descrizione: Un servizio che restituisce informazioni sulla posizione geografica (città, regione, paese) di un indirizzo IP. Utile per test di localizzazione e geolocalizzazione.
-
-    Esempi:
-    - GetGeoIP: Restituisce informazioni geografiche di un indirizzo IP.
-
-10. Random Quote SOAP Service
-
-    URL WSDL: <http://www.randomquotes.net/webservice/quotes.asmx?WSDL>
-
-    Descrizione: Fornisce una citazione casuale. Utile per semplici applicazioni che desiderano visualizzare frasi motivazionali o casuali.
-
-    Esempi:
-    - GetQuote: Restituisce una citazione casuale.
+    - TODO
 
 ### Riferimenti
 
