@@ -43,7 +43,8 @@ class GenericWSDL():
             return None
      # TODO da rivedere 
     def generate_models_from_wsdl(self):
-        """_summary_
+        """
+        
 
         Returns:
             _type_: _description_
@@ -53,23 +54,24 @@ class GenericWSDL():
         models = {}
 
         for name, schema in types.types.items():
-            if isinstance(schema, zeep.xsd.ComplexType):
-                attrs = {
-                    '__tablename__': name.lower(),
-                    'id': Column(Integer, primary_key=True, autoincrement=True)
-                }
-                for element in schema.elements:
-                    field_name = element[0]
-                    field_type = element[1].type
-                    if isinstance(field_type, zeep.xsd.types.String):
-                        attrs[field_name] = Column(String)
-                    elif isinstance(field_type, zeep.xsd.types.Integer):
-                        attrs[field_name] = Column(Integer)
-                    # Aggiungi altri tipi di mappatura secondo necessità
+            print(name,schema)
+            # if isinstance(schema, zeep.xsd.ComplexType):
+            #     attrs = {
+            #         '__tablename__': name.lower(),
+            #         'id': Column(Integer, primary_key=True, autoincrement=True)
+            #     }
+            #     for element in schema.elements:
+            #         field_name = element[0]
+            #         field_type = element[1].type
+            #         if isinstance(field_type, zeep.xsd.types.String):
+            #             attrs[field_name] = Column(String)
+            #         elif isinstance(field_type, zeep.xsd.types.Integer):
+            #             attrs[field_name] = Column(Integer)
+            #         # Aggiungi altri tipi di mappatura secondo necessità
 
-                # Crea il modello dinamicamente
-                model = type(name, (Base,), attrs)
-                models[name] = model
+            #     # Crea il modello dinamicamente
+            #     model = type(name, (Base,), attrs)
+            #     models[name] = model
 
         return models
 
